@@ -1,0 +1,126 @@
+
+nav {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+form {
+  background: linear-gradient(to bottom right, #2f2f2f, #3e3e3e);
+  color: #f1f1f1;
+  padding: 50px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 60px auto;
+  margin-top: 20vh;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 0.6s ease;
+}
+
+
+
+form input,
+form button {
+  width: 94%;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form input {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+}
+
+form button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  margin-left: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to left, #00c6ff, #0072ff);
+}
+
+
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  z-index: 9999;
+  animation: fadeInPop 0.4s ease forwards;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  color: white;
+}
+
+.modal.success {
+  background: linear-gradient(to right, #14532d, #166534);
+  border: 2px solid #22c55e;
+}
+
+.modal.error {
+  background: linear-gradient(to right, #7f1d1d, #991b1b);
+  border: 2px solid #f87171;
+}
+
+.modal button {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+
+footer {
+  margin-top: 32vh;
+  background-color: #3e3e3e;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
